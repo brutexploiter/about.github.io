@@ -4,15 +4,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
     color: #333;
 }
 
 header {
-    background-color: #2c3e50;
+    background-image: linear-gradient(to bottom, #2c3e50, #34495e);
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 80px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -30,7 +30,7 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: #2c3e50;
+    color: white;
     margin: 0 20px;
     font-size: 18px;
     transition: color 0.3s ease-in-out;
@@ -42,11 +42,13 @@ header {
 
 .container {
     max-width: 800px;
-    margin: 150px auto 0;
+    margin: 200px auto 0;
     padding: 40px;
-    background-color: white;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
+    transform: translateY(-50%);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .profile-pic {
@@ -78,7 +80,7 @@ p {
 }
 
 footer {
-    background-color: #2c3e50;
+    background-image: linear-gradient(to bottom, #2c3e50, #34495e);
     color: white;
     text-align: center;
     padding: 20px 0;
