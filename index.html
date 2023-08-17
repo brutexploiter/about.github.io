@@ -7,18 +7,35 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f8f8f8;
             color: #333;
         }
         header {
             background-color: #222;
             color: white;
             text-align: center;
-            padding: 120px 0;
+            padding: 40px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+            font-size: 18px;
         }
         .container {
-            max-width: 900px;
-            margin: 0 auto;
+            max-width: 800px;
+            margin: 100px auto 0;
             padding: 40px;
             background-color: white;
             box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
@@ -52,23 +69,29 @@
             color: white;
             text-align: center;
             padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
-        <p>Security Researcher | Ethical Hacker | Bug Bounty Hunter</p>
+        <div class="navbar">
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
+        </div>
     </header>
-    <div class="container">
+    <div class="container" id="about">
         <img class="profile-pic" src="assets/images/profile-picture.jpg" alt="Brutexploiter">
         <h1>Brutexploiter</h1>
         <p>🌐 Joined the mission to safeguard the Digital World! 🌐</p>
         <p>Unlocking the secrets of the digital realm, I am a passionate security researcher with a relentless pursuit of knowledge. Armed with lightning-fast reflexes and an unwavering commitment to protect the digital world, I stand as a guardian of your digital assets. My expertise spans the intricate domains of web security, mobile security, and API security.</p>
         <p class="specialization">=== Web Security | Mobile | API ===</p>
     </div>
-    <footer>
-        <p>Contact: brutexploiter@example.com</p>
+    <footer id="contact">
+        <p>&copy; 2023 Brutexploiter. All rights reserved.</p>
+        <p>Contact: <a href="mailto:brutexploiter@example.com">brutexploiter@example.com</a></p>
     </footer>
 </body>
 </html>
