@@ -7,44 +7,54 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f5f5f5;
         }
         header {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 80px 0;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
         }
-        img {
-            max-width: 200px; /* Adjust the width as desired */
+        .profile-pic {
+            max-width: 200px;
             height: auto;
             display: block;
-            margin: 0 auto 20px; /* Center the image and add some margin */
+            margin: 0 auto 20px;
+            border-radius: 50%;
         }
         h1 {
-            font-size: 28px;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
         p {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .specialization {
+            font-size: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>About Me</h1>
-        <p>Security Researcher, Ethical Hacker, Bug Bounty Hunter</p>
+        <p>Security Researcher | Ethical Hacker | Bug Bounty Hunter</p>
     </header>
     <div class="container">
-        <img src="assets/images/profile-picture.jpg" alt="Brutexploiter">
+        <img class="profile-pic" src="assets/images/profile-picture.jpg" alt="Brutexploiter">
         <h1>Brutexploiter</h1>
         <p>🌐 Joined the mission to safeguard the Digital World! 🌐</p>
-        <p>Unlocking the secrets of the digital realm, I am a security researcher with an insatiable hunger for knowledge. Armed with lightning-fast reflexes and an unyielding commitment to protect the digital world, I am here to safeguard your assets. With lightning speed and razor-sharp expertise, I specialize in the realm of web security, mobile security, and API security.</p>
-        <p>=== Web Security | Mobile | API ===</p>
+        <p>Unlocking the secrets of the digital realm, I am a passionate security researcher with a relentless pursuit of knowledge. Armed with lightning-fast reflexes and an unwavering commitment to protect the digital world, I stand as a guardian of your digital assets. My expertise spans the intricate domains of web security, mobile security, and API security.</p>
+        <p class="specialization">=== Web Security | Mobile | API ===</p>
     </div>
 </body>
 </html>
